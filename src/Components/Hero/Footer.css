@@ -1,0 +1,25 @@
+.footer-container {
+    background-color: #4BADD8; /* Warna latar belakang footer sesuai kebutuhan */
+    color: #fff; /* Warna teks footer */
+    font-size: 20px;
+    font-size:large;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 100px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff; /* Warna tautan */
+    margin-right: 20px; /* Jarak antara tautan */
+  }
+  
+  .footer-copyright {
+    font-size: 14px; /* Ukuran teks hak cipta */
+  }
+  

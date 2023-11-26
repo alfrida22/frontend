@@ -1,0 +1,178 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  /* Menggunakan tinggi layar penuh */
+}
+
+.sidebar {
+  background-color: #91C3DF;
+  color: #fff;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  /* Ukuran karakter Unicode */
+  transition: transform 0.3s;
+}
+
+.sidebar li:hover {
+  transform: scale(1.2);
+}
+
+.sidebar img {
+  width: 50px;
+  /* Sesuaikan ukuran sesuai kebutuhan Anda */
+  height: 50px;
+  /* Sesuaikan ukuran sesuai kebutuhan Anda */
+  margin-bottom: 20px;
+  /* Jarak antara logo dan ikon-ikon */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search-bar {
+  flex: 1;
+  /* Menggunakan flex untuk merentangkan elemen */
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+}
+
+.date-label {
+  margin-right: 10px;
+}
+
+.date-output {
+  font-weight: bold;
+  border: 1px solid #000;
+  /* Tambahkan garis kotak dengan warna hitam */
+  padding: 5px;
+  /* Berikan padding agar garis kotak tidak terlalu dekat dengan teks */
+  margin-right: 10px;
+}
+
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.favorite-activities {
+  margin-top: 20px;
+  text-align: left;
+  /* Menggeser teks ke pojok kiri */
+}
+
+.favorite-activities h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.activity-images {
+  display: flex;
+  overflow-x: auto;
+  margin-right: -10px;
+}
+
+.activity-images img {
+  width: 390px;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+
+.search-bar input,
+.date-dropdown select {
+  padding: 10px;
+  width: 100%;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+
+.user-profile span {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.user-profile img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    /* Gunakan lebar penuh saat layar kecil */
+    align-items: flex-start;
+    /* Geser menu ke kiri */
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    /* Tampilkan menu secara horizontal */
+  }
+
+  .sidebar li {
+    margin: 0 10px;
+    /* Atur jarak antara item menu */
+  }
+}
+
+@media (max-width: 768px) {
+  .activity-images {
+    flex-wrap: nowrap;
+    /* Hindari pemutaran baris gambar */
+    overflow-x: auto;
+  }
+
+  .activity-images img {
+    width: 100%;
+    /* Sesuaikan lebar gambar sesuai kebutuhan */
+    height: auto;
+    margin: 10px;
+    /* Atur jarak antara gambar */
+  }
+}

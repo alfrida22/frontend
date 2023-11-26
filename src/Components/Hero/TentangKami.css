@@ -1,0 +1,45 @@
+.tentang-kami-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.judul-tentang-kami {
+  text-align: center; /* Untuk membuat judul berada di tengah */
+  flex: 1;
+}
+
+.judul-tentang-kami h2 {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold; 
+}
+
+.konten-tentang-kami {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gambar-tentang-kami {
+  flex: 1;
+  padding: 0 20px; /* Spasi antara gambar dan teks */
+}
+
+.gambar-tentang-kami img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+}
+
+.teks-tentang-kami {
+  flex: 2;
+}
+
+.teks-tentang-kami p {
+  font-size: 16px;
+  line-height: 1.5;
+}

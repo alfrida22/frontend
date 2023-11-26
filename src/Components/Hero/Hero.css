@@ -1,0 +1,53 @@
+.text-container {
+    flex: 1;
+    /* Membuat bagian teks fleksibel */
+    padding: 20px;
+    text-align: left;
+    /* Teks berada di sebelah kiri */
+    order: 1;
+    /* Mengatur urutan tampilan */
+}
+
+.hero-img {
+    flex: 1;
+    /* Membuat bagian gambar fleksibel */
+    order: 2;
+    /* Mengatur urutan tampilan */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-shop {
+    display: block;
+    margin: 0 auto;
+    /* Memberikan warna pada tombol */
+    background-color: #2B7B94;
+    /* Ganti dengan warna yang Anda inginkan */
+    color: #ffffff;
+    /* Warna teks pada tombol */
+    padding: 10px 20px;
+    /* Padding di dalam tombol */
+    border: none;
+    /* Menghilangkan border */
+    border-radius: 5px;
+    /* Mengubah sudut tombol */
+    cursor: pointer;
+    /* Mengubah cursor saat mengarah ke tombol */
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .text-container, .hero-img {
+        flex: 1;
+        order: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-img {
+        margin-top: 20px; /* Beri jarak dari teks */
+    }
+}
